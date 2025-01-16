@@ -1,0 +1,72 @@
+[versions]
+agp = "8.7.3"
+converterGson = "2.11.0"
+kotlin = "2.0.20"
+composeCompiler = "2.0.20"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+lifecycleRuntimeCompose = "2.8.7"
+loggingInterceptor = "4.12.0"
+material = "1.12.0"
+
+androidx-compose-bom = "2024.12.01"
+
+hilt = "2.49"
+hiltExt = "1.2.0"
+hiltNavigationCompose = "1.2.0"
+
+nav-version = "2.8.5"
+okhttp = "4.12.0"
+okhttpUrlconnection = "4.4.1"
+retrofit = "2.11.0"
+timber = "5.0.1"
+workRuntimeKtx = "2.10.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "androidx-compose-bom" }
+androidx-compose-foundation = { module = "androidx.compose.foundation:foundation" }
+androidx-compose-runtime = { module = "androidx.compose.runtime:runtime" }
+androidx-compose-material3 = { module = "androidx.compose.material3:material3" }
+androidx-compose-material3-window = { module = "androidx.compose.material3:material3-window-size-class" }
+androidx-compose-ui-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+androidx-compose-ui-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycleRuntimeCompose" }
+androidx-work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "workRuntimeKtx" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "nav-version" }
+navigation-runtime-ktx = { module = "androidx.navigation:navigation-runtime-ktx", version.ref = "nav-version" }
+navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "nav-version" }
+navigation-dynamic-features-fragment = { module = "androidx.navigation:navigation-dynamic-features-fragment", version.ref = "nav-version" }
+navigation-testing = { module = "androidx.navigation:navigation-testing", version.ref = "nav-version" }
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "nav-version" }
+
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "hilt" }
+hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+hilt-ext-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltExt" }
+hilt-ext-work = { module = "androidx.hilt:hilt-work", version.ref = "hiltExt" }
+hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+okhttp-urlconnection = { module = "com.squareup.okhttp3:okhttp-urlconnection", version.ref = "okhttpUrlconnection" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "composeCompiler" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+
